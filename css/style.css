@@ -1,0 +1,336 @@
+
+* {
+    color: #fff;
+    font-family: "Forum";
+}
+
+/* Home, photo gallery and acitivities sections */
+.section {
+    width: 100%;
+    height: 700px;
+    margin-bottom: 6px; /* space between divs */
+}
+
+/* skip to main */
+.skip-main {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+}
+.skip-main:focus {  
+    font-size: 1.3em;
+    position: static;
+}
+
+/* header */
+header {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    transition: background-color 0.18s ease;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #00000077;
+}
+.logo {
+    margin: 5px;
+}
+#item {
+    display: flex;
+}
+#item a{
+    margin: .5em .9em;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+#item a:hover {
+    color: #d9d8d8;
+    text-decoration: underline;
+}
+/* header end */
+
+/* home page */
+#home {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/arches1.png');  
+    background-size: cover; 
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+#home h1 {
+    font-size: 5.1em;
+    margin-left: 5%;
+}
+#home h2 {
+    font-size: 1.19em;
+    margin-left: 5%;
+    margin-top: 15px;
+}
+/* home end */
+
+/* photo gallery start */
+#photo-gallery {
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('../images/saltflats.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+#photo-gallery h1 {
+    color: black;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); 
+}
+#photo-gallery a {
+    text-decoration: none;
+}
+.photo-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: inherit; 
+}
+.items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    width: 100%;
+}
+.card {
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-position: center;
+    transition: transform 0.45s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+.card h2 {
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #999;
+    color: black;
+    font-size: larger;
+}
+.card p {
+    text-shadow: 0 0 5px #000;
+    font-size: 15px;
+}
+.card1 {
+    background-image: url(../images/zions5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card2 {
+    background-image: url(../images/bryce5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card3 {
+    background-image: url(../images/capitol5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card4 {
+    background-image: url(../images/mountain5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card:hover {
+    transform: translateY(-15px);
+}
+/* photo gallery end */
+
+/* activities start */
+#activities {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/night.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+#activities h1 {
+    margin: 10px;
+    font-size: 3em;
+    color: white;
+}
+.activities-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+} 
+.activities-container a {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .8); 
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+} 
+.circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    box-sizing: border-box;
+    cursor: pointer;
+    background-position: center;
+    margin: 40px;
+    transition: transform 0.3s ease;
+}
+.circle:hover {
+    transform: scale(1.1);
+}
+.circle1 {
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(../images/hiking.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.circle2 {
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(../images/horse-back-riding.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.circle3 {
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),url(../images/mountain-biking.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.circle4 {
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(../images/climbing.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.circle5 {
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(../images/ski.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* acitivites end */
+
+/* responsive start */
+/* Mobile */
+@media screen and (min-width: 0) {
+    #item a {
+        font-size: 1.4em;
+    }
+    .logo {
+        width: 45px;
+    }
+    #home h1 {
+        font-size: 4.1em;
+    }
+    #home h2 {
+        font-size: 1em;
+    }
+    .circle {
+        width: 160px; 
+        height: 160px;
+    }
+    #activities h1 {
+        font-size: 2.5em;
+        margin: 20px
+    }
+    .card {
+        width: 140px;
+        height: 240px;
+        margin: 10px 20px;
+        padding: 15px 25px;
+    }
+    .photo-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #photo-gallery h1 {
+        color: black;
+        margin: 10px;
+        font-size: 2em;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) {
+    #item a {
+        font-size: 1.7em;
+    }
+    .logo {
+        width: 53px;
+    }
+    #home h1 {
+        font-size: 4.6em;
+    }
+    #home h2 {
+        font-size: 1.2em;
+    }
+    .circle {
+        width: 185px; 
+        height: 185px;
+    }
+    #activities h1 {
+        font-size: 2.6em;
+        margin: 20px
+    }
+    .card {
+        width: 180;
+        height: 220px;
+        margin: 10px 20px;
+        padding: 15px 25px;
+    }
+    .photo-container {
+        align-items: flex-start;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #photo-gallery h1 {
+        color: black;
+        margin: 20px;
+        font-size: 3em;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    .logo {
+        width: 65px;
+    }
+    .circle {
+        width: 200px; 
+        height: 200px;
+    }
+    .card {
+        width: 240px;
+        height: 280px;
+        margin: 20px 30px;
+        padding: 15px 25px;
+    }
+    .photo-container {
+        align-items: center;
+        justify-content: center
+    }
+    #photo-gallery h1 {
+        color: black;
+        margin: 45px;
+        font-size: 3em;
+    }
+    #item a{
+        font-size: 1.7em;
+    }
+}
